@@ -33,7 +33,7 @@ gulp.task('styles', function() {
 //gulp watches html and css
 gulp.task('watch', function() {
     gulp.watch("src/sass/*.+(scss|sass)", gulp.parallel("styles"));
-    gulp.watch("src/*/html").on("change", browserSync.reload);
+    gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 //all gulp tasks running)
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));

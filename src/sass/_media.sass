@@ -36,8 +36,10 @@
     .world 
         .title 
             font-size: 33px
+    footer 
+	    padding: 14px 23px 39px 23px
     .footer
-		&_wrapper>div 
+        &_wrapper > div 
             width: 50%
             &:nth-child(1)
                 width: 25%
@@ -45,12 +47,12 @@
                 width: 25%
                 display: flex 
                 justify-content: flex-end
-		&_mobile
-			display: flex
-			a 
-				margin: 0 3px
-				img 
-					width: 100%
+        &_mobile
+            display: flex
+            a 
+                margin: 0 3px
+                img 
+                    width: 100%
 
 @media (max-width: 991px)
     .menu
@@ -80,20 +82,21 @@
             margin-right: 0
         &_text 
             margin-top: 16px
+    footer 
+	    padding: 14px 23px 39px 23px
     .footer
-		&_wrapper
-			flex-wrap: wrap
-		&_wrapper > div 
-			width: 100%
-			display: flex 
-			justify-content: center
-			margin-bottom: 20px
-			&:nth-child(1)
-				width: 100%
-			&:nth-child(3)
-				width: 100%
-				justify-content: center
-
+        &_wrapper
+            flex-wrap: wrap
+        &_wrapper > div
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+            &:nth-child(1)
+                width: 100%
+            &:nth-child(3)
+                width: 100%
+                justify-content: center
 @media (max-width: 767px)
     .menu
         position: fixed
